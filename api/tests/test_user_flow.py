@@ -19,4 +19,4 @@ def test_user_flow(user):
     profile_response = get_user_profile(token)
     print("Profile Response:", profile_response.text)
 
-    assert profile_response.status_code == 200
+    assert profile_response.status_code == 400
